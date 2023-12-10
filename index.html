@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //getComputerChoice()
+            //Declare getComputerChoice function
+            function getComputerChoice() {
+                 //Generate random number between 1 - 3, inclusive, put into variable
+                 computerChoice = Math.floor(Math.random() * (3 - 1 + 1) + 1);
+                //If random number  = 1 THEN
+                if (computerChoice === 1) {
+                    //RETURN "Rock"
+                    return "ROCK";
+                //ElSE IF random number = 2 THEN
+                } else if (computerChoice === 2) {
+                    //RETURN "PAPER"
+                    return "PAPER";
+                //ELSE random number = 3 THEN
+                } else {
+                //RETURN "SCISSORS"
+                    return "SCISSORS";
+                }
+            }
+        
+        //playRound()
+            //DECLARE playRound() function, with 2 params: playerSelection, computerSelection
+                //Make playerSelection upper case (or case insensitive)
+                //IF playerSelection is "ROCK" AND computerSelection is "PAPER"
+                    //ALERT "You Lose! Paper beats Rock"
+                //ELSE IF playerSelection is "ROCK" AND computerSelection is "SCISSORS"
+                    //ALERT "You Win! Rock beats Scissors"
+                //ELSE IF playerSelection is "PAPER" AND computerSelection is "SCISSORS"
+                    //ALERT "You Lose! Scissors beats Paper"
+                //ELSE IF playerSelection is "PAPER" AND computerSelection is "ROCK"
+                    //ALERT "You Win! Paper beats Rock"
+                //ELSE IF playerSelection is "SCISSORS" AND computerSelection is "ROCK"
+                    //ALERT "You Lose! Rock beats Scissors"
+                //ELSE IF playerSelection is "SCISSORS AND computerSelection is PAPER"
+                    //ALERT "You Win! Scissors beats Paper"
+                //ELSE IF playerSelection IS EQUAL TO computerSelection
+                    //ALERT "It's a tie"
+                    //Replay the function
+                //ELSE
+                    //ALERT "WTF you doin"
+                    //Replay the function
+    </script>
+</body>
+</html>
