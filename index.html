@@ -29,25 +29,38 @@
         
         //playRound()
             //DECLARE playRound() function, with 2 params: playerSelection, computerSelection
+            function playRound(playerSelection,computerSelection) {
                 //Make playerSelection upper case (or case insensitive)
+                let choice = playerSelection.toUpperCase();
                 //IF playerSelection is "ROCK" AND computerSelection is "PAPER"
+                if ((choice === "ROCK") && (computerSelection === "PAPER")) {
                     //ALERT "You Lose! Paper beats Rock"
+                    alert("You lose! Paper beats rock");
                 //ELSE IF playerSelection is "ROCK" AND computerSelection is "SCISSORS"
+                } else if ((choice === "ROCK" && computerSelection === "SCISSORS")) {
                     //ALERT "You Win! Rock beats Scissors"
+                    alert("You win! Rock beats scissors");
                 //ELSE IF playerSelection is "PAPER" AND computerSelection is "SCISSORS"
-                    //ALERT "You Lose! Scissors beats Paper"
-                //ELSE IF playerSelection is "PAPER" AND computerSelection is "ROCK"
-                    //ALERT "You Win! Paper beats Rock"
+                } else if ((choice === "PAPER" && computerSelection === "SCISSORS")) {
+                    //ALERT "You Lose! Scissors beats Paper"                    
+                    alert("You lose! Scissors beats paper");
+                 //ELSE IF playerSelection is "PAPER" AND computerSelection is "ROCK"
+                } else if ((choice === "PAPER" && computerSelection === "ROCK")) {
+                     //ALERT "You Win! Paper beats Rock"
+                    alert("You win! Paper beats rock");
                 //ELSE IF playerSelection is "SCISSORS" AND computerSelection is "ROCK"
-                    //ALERT "You Lose! Rock beats Scissors"
-                //ELSE IF playerSelection is "SCISSORS AND computerSelection is PAPER"
-                    //ALERT "You Win! Scissors beats Paper"
-                //ELSE IF playerSelection IS EQUAL TO computerSelection
-                    //ALERT "It's a tie"
-                    //Replay the function
-                //ELSE
-                    //ALERT "WTF you doin"
-                    //Replay the function
+                } else if ((choice === "SCISSORS" && computerSelection === "ROCK")) {
+                    alert("You Lose! Rock beats scissors");
+                } else if ((choice === "SCISSORS" && computerSelection === "PAPER")) {
+                    alert("You win! Scissors beats paper");
+                } else if ((choice === computerSelection) {
+                    alert("It's a tie");
+                    playRound(choice,computerSelection);
+                } else {
+                    alert("WTF you doin");
+                    playRound(choice,computerSelection);
+                }
+            }
     </script>
 </body>
 </html>
