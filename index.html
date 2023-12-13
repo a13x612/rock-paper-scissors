@@ -27,6 +27,21 @@
                 }
             }
         
+        //game()
+        function game() {
+            const playerSelection = prompt("Choose Rock, Paper, or Scissors");
+            const computerSelection = getComputerChoice();
+            playRound(playerSelection,computerSelection);
+            playRound(playerSelection,computerSelection);
+            playRound(playerSelection,computerSelection);
+            playRound(playerSelection,computerSelection);
+            playRound(playerSelection,computerSelection);
+        }
+            //PROMPT user to enter in their choice (Rock, paper, scissors), pass choice into playerSelection variable
+            //CALL getComputerChoice() function. Pass result into computerSelection variable
+            //CALL playRound() function. Pass playerSelection and computerSelection as variables
+
+
         //playRound()
             //DECLARE playRound() function, with 2 params: playerSelection, computerSelection
             function playRound(playerSelection,computerSelection) {
@@ -59,10 +74,10 @@
                     return "WTF you doin";
                 }
             }
-
+            /*
             const playerSelection = "Rock";
             const computerSelection = getComputerChoice();
-            console.log(playRound(playerSelection,computerSelection));
+            console.log(playRound(playerSelection,computerSelection)); */
     </script>
 </body>
 </html>
